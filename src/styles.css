@@ -1,0 +1,60 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.Example {
+  width: 200px;
+  height: 200px;
+}
+
+.Container {
+  position: relative;
+  box-sizing: border-box;
+  width: 100px;
+  max-height: 200px;
+  background: green;
+  overflow: hidden;
+}
+
+.fade-enter {
+  max-height: 0;
+}
+
+.fade-enter-active,
+.fade-exit-active {
+  transition: max-height 300ms;
+}
+
+.fade-enter-active {
+  max-height: 200px;
+}
+
+.fade-exit-active {
+  max-height: 0;
+}
+
+.List {
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 80px;
+  height: 100px;
+  background: blue;
+  overflow: scroll;
+}
+
+.ListContent {
+  box-sizing: border-box;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 60px;
+  height: 500px;
+  background: red;
+}
+
+.ListFooter {
+  width: 100px;
+  height: 50px;
+  background: gray;
+}
